@@ -1,11 +1,11 @@
-author = Frontline Operations Group;
-onLoadMission = "| Welcome to Frontline Operations |";
+author = Modified by and for: 16th Air Assault Brigade;
+onLoadMission = "| Welcome to Frontline Operations [ALTIS - B.A.F (2035)]|";
 overviewText = "Welcome to Frontline Operations, Lead the Invasion, Using Conventional Tactics and Operations to capture Strategic Locations and establish Forward Operation Bases across the island, Train your Skills in Different Roles, Within a Realistic Combat Environment!";
 onLoadIntroTime = 1;
 onLoadMissionTime = 1;
 onLoadName = Frontline Operations;
-loadScreen = "Screens\FLO.paa";
-overviewPicture = "Screens\FLO.paa";
+loadScreen = "Screens\FLO.jpg";
+overviewPicture = "Screens\FLO.jpg";
 disabledAI = 1;
 enableDebugConsole = 1;
 
