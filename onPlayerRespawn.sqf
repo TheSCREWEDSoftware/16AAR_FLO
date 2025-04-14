@@ -10,14 +10,14 @@ player enableAI "all";
 ["GetOutMan"] remoteExec ["removeAllEventHandlers", player, false];
 
 // Clear player's inventory
-removeAllWeapons player;
-removeAllItems player;
+//removeAllWeapons player;
+//removeAllItems player;
 //removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeHeadgear player;
-removeGoggles player;
+//removeUniform player;
+//removeVest player;
+//removeBackpack player;
+//removeHeadgear player;
+//removeGoggles player;
 
 (_this select 1) setPos [0,0,0];
 deleteVehicle (_this select 1);
