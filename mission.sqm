@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16809;
+		nextID=16815;
 	};
 	class Camera
 	{
-		pos[]={-569.30414,42.176586,482.2908};
-		dir[]={0.20914726,-0.7325474,0.6477899};
-		up[]={0.22507223,0.68071604,0.69711417};
-		aside[]={0.95163012,0,-0.30724597};
+		pos[]={810.37854,87.01693,654.7746};
+		dir[]={-0.78674847,-0.57684654,-0.21998288};
+		up[]={-0.55557394,0.81683064,-0.15534529};
+		aside[]={-0.2692942,-3.3003744e-08,0.96311253};
 	};
 };
 binarizationWanted=0;
-sourceName="FLO";
+sourceName="16aar_flo_v1";
 addons[]=
 {
 	"A3_Structures_F_Ind_DieselPowerPlant",
@@ -38,9 +38,10 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F_Hc",
 	"A3_Characters_F",
-	"A3_Weapons_F",
+	"A3_Aegis_Characters_F_Aegis",
 	"ace_explosives",
 	"A3_Characters_F_Mark",
+	"FIR_PilotCrewPack_US",
 	"ace_gforces",
 	"ace_parachute"
 };
@@ -48,7 +49,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			className="A3_Structures_F_Ind";
@@ -86,10 +87,10 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="A3_Aegis_Characters_F_Aegis";
+			name="Arma 3 Aegis - Characters and Clothing";
+			author="Avery Kaiserin";
+			url="https://steamcommunity.com/sharedfiles/filedetails/?id=949252631";
 		};
 		class Item6
 		{
@@ -106,6 +107,11 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item8
+		{
+			className="FIR_PilotCrewPack_US";
+			name="FIR_PilotCrewPack_US";
+		};
+		class Item9
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
@@ -161,6 +167,135 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_medical_statemachine_fatalinjuriesplayer";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_medical_statemachine_cardiacarresttime";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=900;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								singleType="ANY";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -187,7 +322,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=48;
+		items=45;
 		class Item0
 		{
 			dataType="Layer";
@@ -6668,13 +6803,13 @@ class Mission
 			name="MODULES";
 			class Entities
 			{
-				items=12;
+				items=6;
 				class Item0
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-633.375,0,100.39};
+						position[]={743.04651,0,476.10059};
 					};
 					name="ZEUS";
 					id=4;
@@ -6691,7 +6826,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="76561198111941967";
+									value="76561198070365356";
 								};
 							};
 						};
@@ -6717,7 +6852,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Texas";
+									value="Ryan ";
 								};
 							};
 						};
@@ -6742,7 +6877,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-507.84589,4.5919406e-09,220.32373};
+						position[]={868.57678,0,596.03418};
 					};
 					id=99321;
 					type="ModuleCuratorAddAddons_F";
@@ -6809,7 +6944,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-506.60699,6.2497341e-10,105.101};
+						position[]={869.81555,0,480.81128};
 					};
 					id=99320;
 					type="ModuleCuratorSetSideCosts_F";
@@ -6915,7 +7050,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-806.46405,-4.9172293e-09,217.17432};
+						position[]={569.95862,0,592.88477};
 					};
 					id=118199;
 					type="HighCommand";
@@ -6926,7 +7061,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-640.64862,-5.107752e-10,217.81494};
+						position[]={735.77405,0,593.52539};
 					};
 					id=118200;
 					type="HighCommandSubordinate";
@@ -6937,7 +7072,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={-639.96399,0,99.515999};
+						position[]={736.45898,0,475.22601};
 					};
 					name="ZEUS_1";
 					id=131282;
@@ -6954,7 +7089,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="76561198000667545  ";
+									value="76561198433418597";
 								};
 							};
 						};
@@ -6980,415 +7115,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="Taldor";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item6
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-647.005,0,99.067001};
-					};
-					name="ZEUS_2";
-					id=131283;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198145777993";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Leon";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item7
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-654.39398,0,98.559998};
-					};
-					name="ZEUS_3";
-					id=131284;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198874160679";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Felix";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item8
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-662.08899,0,98.041};
-					};
-					name="ZEUS_4";
-					id=131285;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561199260716262";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Kilgore";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item9
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-669.211,0,97.461998};
-					};
-					name="ZEUS_5";
-					id=131286;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198832275757";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Stewie";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item10
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-675.93903,0,96.560997};
-					};
-					name="ZEUS_6";
-					id=131287;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198294153133";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Mark";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ModuleCurator_F_Addons";
-							expression="_this setVariable ['Addons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=3;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item11
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={-683.22101,0,95.93};
-					};
-					name="ZEUS_7";
-					id=131288;
-					type="ModuleCurator_F";
-					atlOffset=185.97;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ModuleCurator_F_Owner";
-							expression="_this setVariable ['Owner',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="76561198343484805";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ModuleCurator_F_Forced";
-							expression="_this setVariable ['Forced',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ModuleCurator_F_Name";
-							expression="_this setVariable ['Name',_value,true];";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Angel";
+									value="Willow ";
 								};
 							};
 						};
@@ -7417,7 +7144,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={-567.57471,0,477.75098};
+				position[]={808.84778,0,853.46143};
 				angles[]={0,0.034140419,0};
 			};
 			side="Empty";
@@ -8831,55 +8558,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={-553.66156,0,566.6748};
-				angles[]={0,0.034140419,0};
-			};
-			name="HC_3";
-			isPlayable=1;
-			id=125999;
-			type="HeadlessClient_F";
-			atlOffset=185.97;
-		};
-		class Item7
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={-555.71936,0,570.26367};
-				angles[]={0,0.034140419,0};
-			};
-			name="HC_2";
-			isPlayable=1;
-			id=126000;
-			type="HeadlessClient_F";
-			atlOffset=185.97;
-		};
-		class Item8
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={-557.77722,0,566.72791};
-				angles[]={0,0.034140419,0};
-			};
-			name="HC_1";
-			isPlayable=1;
-			id=126001;
-			type="HeadlessClient_F";
-			atlOffset=185.97;
-		};
-		class Item9
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={15263.342,-2.8105296e-12,14096.298};
 			};
 			id=126021;
 			type="LocationArea_F";
 			atlOffset=66.294861;
 		};
-		class Item10
+		class Item7
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8890,7 +8575,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item11
+		class Item8
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8901,7 +8586,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item12
+		class Item9
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8912,7 +8597,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item13
+		class Item10
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8923,7 +8608,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.973793;
 		};
-		class Item14
+		class Item11
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8934,7 +8619,7 @@ class Mission
 			id=126048;
 			type="LocationArea_F";
 		};
-		class Item15
+		class Item12
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8945,7 +8630,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item16
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8956,7 +8641,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item17
+		class Item14
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8967,7 +8652,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item18
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8978,7 +8663,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item19
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8989,7 +8674,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item20
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -9000,7 +8685,7 @@ class Mission
 			type="LocationArea_F";
 			atlOffset=1.9737854;
 		};
-		class Item21
+		class Item18
 		{
 			dataType="Group";
 			side="West";
@@ -9012,7 +8697,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-566.58099,0.0014388561,500.69998};
+						position[]={809.84143,0.0014388561,876.4104};
 						angles[]={0,6.1459675,0};
 					};
 					side="West";
@@ -9026,10 +8711,6 @@ class Mission
 						isPlayer=1;
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131170;
 					type="B_G_officer_F";
@@ -9096,7 +8777,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-564.453,0.0014388561,500.72299};
+						position[]={811.9696,0.0014388561,876.43335};
 						angles[]={0,6.1459675,0};
 					};
 					side="West";
@@ -9107,10 +8788,6 @@ class Mission
 						description="Company Executive Officer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131171;
 					type="B_G_officer_F";
@@ -9177,7 +8854,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.54102,0.0014388561,500.651};
+						position[]={813.88147,0.0014388561,876.36133};
 						angles[]={0,6.1459675,0};
 					};
 					side="West";
@@ -9189,10 +8866,6 @@ class Mission
 						description="Company First Sergeant";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131172;
 					type="B_G_officer_F";
@@ -9291,7 +8964,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item22
+		class Item19
 		{
 			dataType="Group";
 			side="West";
@@ -9303,7 +8976,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-551.92902,0.0014388561,499.81699};
+						position[]={824.49353,0.0014388561,875.52734};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9314,10 +8987,6 @@ class Mission
 						description="Platoon Commander@Sabre 1";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131174;
 					type="B_G_Soldier_SL_F";
@@ -9384,7 +9053,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-553.58801,0.0014388561,499.983};
+						position[]={822.83459,0.0014388561,875.69336};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9394,10 +9063,6 @@ class Mission
 						description="Platoon Sergeant";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131175;
 					type="B_G_Soldier_SL_F";
@@ -9464,7 +9129,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.62598,0.0014388561,500.047};
+						position[]={820.79651,0.0014388561,875.75732};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9474,10 +9139,6 @@ class Mission
 						description="Platoon JFO";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131176;
 					type="B_G_Soldier_SL_F";
@@ -9544,7 +9205,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.88898,0.0014388561,500.306};
+						position[]={818.53357,0.0014388561,876.01636};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9556,10 +9217,6 @@ class Mission
 						description="CFR Charlie (Platoon Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131177;
 					type="B_G_medic_F";
@@ -9659,7 +9316,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item23
+		class Item20
 		{
 			dataType="Group";
 			side="West";
@@ -9671,7 +9328,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-554.32593,0.0014388561,507.67435};
+						position[]={822.09656,0.0014388561,883.38477};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9682,10 +9339,6 @@ class Mission
 						description="UP Squad Leader@Sabre 1-1";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131179;
 					type="B_G_Soldier_SL_F";
@@ -9752,7 +9405,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.46393,0.0014388561,507.73035};
+						position[]={818.95862,0.0014388561,883.44092};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9762,10 +9415,6 @@ class Mission
 						description="UP Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131180;
 					type="B_G_Soldier_SL_F";
@@ -9832,7 +9481,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.92194,0.0014388561,507.72433};
+						position[]={820.50061,0.0014388561,883.43481};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9842,10 +9491,6 @@ class Mission
 						description="UP Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131181;
 					type="B_G_Soldier_SL_F";
@@ -9912,7 +9557,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-558.93335,0.0014388561,507.78387};
+						position[]={817.48914,0.0014388561,883.49438};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -9922,10 +9567,6 @@ class Mission
 						description="Dismount Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131182;
 					type="B_G_Soldier_SL_F";
@@ -9992,7 +9633,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-559.98401,0.0014388561,507.802};
+						position[]={816.4386,0.0014388561,883.51245};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10004,10 +9645,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131183;
 					type="B_G_medic_F";
@@ -10074,7 +9711,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-564.3786,0.0014388561,507.94363};
+						position[]={812.04407,0.0014388561,883.65405};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -10084,10 +9721,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131184;
 					type="B_G_Soldier_LAT_F";
@@ -10154,7 +9787,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.88037,0.0014388561,507.90417};
+						position[]={813.54211,0.0014388561,883.61475};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -10164,10 +9797,6 @@ class Mission
 						description="Fire Team Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131185;
 					type="B_G_Soldier_LAT_F";
@@ -10234,7 +9863,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-565.70795,0.0014388561,508.02994};
+						position[]={810.71448,0.0014388561,883.74048};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10244,10 +9873,6 @@ class Mission
 						description="Auto Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131186;
 					type="B_G_Soldier_AR_F";
@@ -10314,7 +9939,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-561.39929,0.0014388561,507.84418};
+						position[]={815.02332,0.0014388561,883.55469};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -10324,10 +9949,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131187;
 					type="B_G_Soldier_LAT_F";
@@ -10414,7 +10035,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item24
+		class Item21
 		{
 			dataType="Group";
 			side="West";
@@ -10426,7 +10047,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-554.37799,0.0014388561,510.81};
+						position[]={822.04456,0.0014388561,886.52051};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10437,10 +10058,6 @@ class Mission
 						description="UP Squad Leader@Sabre 1-2";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131189;
 					type="B_G_Soldier_SL_F";
@@ -10507,7 +10124,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.51575,0.0014388561,510.86551};
+						position[]={818.90686,0.0014388561,886.57593};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10517,10 +10134,6 @@ class Mission
 						description="UP Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131190;
 					type="B_G_Soldier_SL_F";
@@ -10587,7 +10200,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.97375,0.0014388561,510.8595};
+						position[]={820.44885,0.0014388561,886.56982};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10597,10 +10210,6 @@ class Mission
 						description="UP Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131191;
 					type="B_G_Soldier_SL_F";
@@ -10667,7 +10276,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-558.98517,0.0014388561,510.91904};
+						position[]={817.43738,0.0014388561,886.62939};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10677,10 +10286,6 @@ class Mission
 						description="Dismount Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131192;
 					type="B_G_Soldier_SL_F";
@@ -10747,7 +10352,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-560.03601,0.0014388561,510.93698};
+						position[]={816.3866,0.0014388561,886.64746};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10759,10 +10364,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131193;
 					type="B_G_medic_F";
@@ -10829,7 +10430,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-564.43042,0.0014388561,511.0788};
+						position[]={811.99207,0.0014388561,886.78931};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -10839,10 +10440,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131194;
 					type="B_G_Soldier_LAT_F";
@@ -10909,7 +10506,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.93219,0.0014388561,511.03934};
+						position[]={813.49036,0.0014388561,886.74976};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -10919,10 +10516,6 @@ class Mission
 						description="Fire Team Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131195;
 					type="B_G_Soldier_LAT_F";
@@ -10989,7 +10582,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-565.75977,0.0014388561,511.1651};
+						position[]={810.66272,0.0014388561,886.87549};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -10999,10 +10592,6 @@ class Mission
 						description="Auto Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131196;
 					type="B_G_Soldier_AR_F";
@@ -11069,7 +10658,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-561.45111,0.0014388561,510.97934};
+						position[]={814.97131,0.0014388561,886.6897};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -11079,10 +10668,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131197;
 					type="B_G_Soldier_LAT_F";
@@ -11169,7 +10754,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item25
+		class Item22
 		{
 			dataType="Group";
 			side="West";
@@ -11181,7 +10766,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-554.18402,0.0014388561,513.82892};
+						position[]={822.2384,0.0014388561,889.53931};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11192,10 +10777,6 @@ class Mission
 						description="UP Squad Leader@Sabre 1-3";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131199;
 					type="B_G_Soldier_SL_F";
@@ -11262,7 +10843,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.32202,0.0014388561,513.88495};
+						position[]={819.10046,0.0014388561,889.59546};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11272,10 +10853,6 @@ class Mission
 						description="UP Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131200;
 					type="B_G_Soldier_SL_F";
@@ -11342,7 +10919,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.78003,0.0014388561,513.87891};
+						position[]={820.64246,0.0014388561,889.58936};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11352,10 +10929,6 @@ class Mission
 						description="UP Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131201;
 					type="B_G_Soldier_SL_F";
@@ -11422,7 +10995,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-558.79144,0.0014388561,513.93842};
+						position[]={817.63098,0.0014388561,889.64893};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11432,10 +11005,6 @@ class Mission
 						description="Dismount Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131202;
 					type="B_G_Soldier_SL_F";
@@ -11502,7 +11071,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-559.84198,0.0014388561,513.95697};
+						position[]={816.58069,0.0014388561,889.66748};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11514,10 +11083,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131203;
 					type="B_G_medic_F";
@@ -11584,7 +11149,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-564.23669,0.0014388561,514.09821};
+						position[]={812.18591,0.0014388561,889.80859};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -11594,10 +11159,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131204;
 					type="B_G_Soldier_LAT_F";
@@ -11664,7 +11225,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.73846,0.0014388561,514.05878};
+						position[]={813.6842,0.0014388561,889.76929};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -11674,10 +11235,6 @@ class Mission
 						description="Fire Team Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131205;
 					type="B_G_Soldier_LAT_F";
@@ -11744,7 +11301,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-565.56604,0.0014388561,514.18451};
+						position[]={810.85657,0.0014388561,889.89502};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11754,10 +11311,6 @@ class Mission
 						description="Auto Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131206;
 					type="B_G_Soldier_AR_F";
@@ -11824,7 +11377,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-561.25739,0.0014388561,513.99872};
+						position[]={815.16516,0.0014388561,889.70923};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -11834,10 +11387,6 @@ class Mission
 						description="LAT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131207;
 					type="B_G_Soldier_LAT_F";
@@ -11924,7 +11473,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item26
+		class Item23
 		{
 			dataType="Group";
 			side="West";
@@ -11936,7 +11485,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-553.88306,0.0014388561,517.18219};
+						position[]={822.53943,0.0014388561,892.89258};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -11947,10 +11496,6 @@ class Mission
 						description="UP Squad Leader@Sabre 1-4";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131209;
 					type="B_G_Soldier_SL_F";
@@ -12017,7 +11562,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.02106,0.0014388561,517.23822};
+						position[]={819.40149,0.0014388561,892.94873};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12027,10 +11572,6 @@ class Mission
 						description="UP Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131210;
 					type="B_G_Soldier_SL_F";
@@ -12097,7 +11638,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.47906,0.0014388561,517.23218};
+						position[]={820.94348,0.0014388561,892.94263};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12107,10 +11648,6 @@ class Mission
 						description="UP Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131211;
 					type="B_G_Soldier_SL_F";
@@ -12177,7 +11714,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-558.49048,0.0014388561,517.29169};
+						position[]={817.93201,0.0014388561,893.0022};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12187,10 +11724,6 @@ class Mission
 						description="Dismount Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131212;
 					type="B_G_Soldier_SL_F";
@@ -12257,7 +11790,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-559.54102,0.0014388561,517.31};
+						position[]={816.88147,0.0014388561,893.02051};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12269,10 +11802,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131213;
 					type="B_G_medic_F";
@@ -12339,7 +11868,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-565.44537,0.0014388561,517.39862};
+						position[]={810.97717,0.0014388561,893.10913};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12349,10 +11878,6 @@ class Mission
 						description="Machine Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131214;
 					type="B_G_Soldier_AR_F";
@@ -12419,7 +11944,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.4375,0.0014388561,517.41205};
+						position[]={813.98499,0.0014388561,893.12256};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -12429,10 +11954,6 @@ class Mission
 						description="Fire Team Leader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131215;
 					type="B_G_Soldier_LAT_F";
@@ -12499,7 +12020,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-560.95636,0.0014388561,517.35162};
+						position[]={815.46619,0.0014388561,893.06201};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -12509,10 +12030,6 @@ class Mission
 						description="AT Specialist";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131216;
 					type="B_G_Soldier_LAT_F";
@@ -12579,7 +12096,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-563.93536,0.0014388561,517.45166};
+						position[]={812.48718,0.0014388561,893.16211};
 						angles[]={0,0.066549405,0};
 					};
 					side="West";
@@ -12589,10 +12106,6 @@ class Mission
 						description="AT Rifleman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131217;
 					type="B_G_Soldier_LAT_F";
@@ -12679,7 +12192,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item27
+		class Item24
 		{
 			dataType="Group";
 			side="West";
@@ -12691,7 +12204,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-552.052,0.0014388561,496.15399};
+						position[]={824.37048,0.0014388561,871.8645};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12702,10 +12215,6 @@ class Mission
 						description="Platoon Commander@Bastion";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131219;
 					type="B_G_Soldier_SL_F";
@@ -12772,7 +12281,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-553.711,0.0014388561,496.31998};
+						position[]={822.71155,0.0014388561,872.03052};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12782,10 +12291,6 @@ class Mission
 						description="Platoon Sergeant";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131220;
 					type="B_G_Soldier_SL_F";
@@ -12852,7 +12357,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.74799,0.0014388561,496.384};
+						position[]={820.67444,0.0014388561,872.09448};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12862,10 +12367,6 @@ class Mission
 						description="Platoon JFO";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131221;
 					type="B_G_Soldier_SL_F";
@@ -12952,7 +12453,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item28
+		class Item25
 		{
 			dataType="Group";
 			side="West";
@@ -12964,7 +12465,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-538.92444,0.0014388561,509.5578};
+						position[]={837.49817,0.0014388561,885.26831};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -12975,10 +12476,6 @@ class Mission
 						description="Squad Leader@Voyager 1";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131223;
 					type="B_G_Soldier_SL_F";
@@ -13045,7 +12542,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-540.73499,0.0014388561,509.67099};
+						position[]={835.68762,0.0014388561,885.38135};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13057,10 +12554,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131224;
 					type="B_G_medic_F";
@@ -13127,7 +12620,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-547.784,0.0014388561,510.30908};
+						position[]={828.63855,0.0014388561,886.01953};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13138,10 +12631,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131225;
 					type="B_G_engineer_F";
@@ -13208,7 +12697,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-545.89642,0.0014388561,510.01379};
+						position[]={830.526,0.0014388561,885.72412};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13219,10 +12708,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131226;
 					type="B_G_engineer_F";
@@ -13289,7 +12774,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-544.20642,0.0014388561,509.88681};
+						position[]={832.21619,0.0014388561,885.59717};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13300,10 +12785,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131227;
 					type="B_G_engineer_F";
@@ -13370,7 +12851,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-542.56042,0.0014388561,509.8898};
+						position[]={833.86218,0.0014388561,885.60034};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13381,10 +12862,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131228;
 					type="B_G_engineer_F";
@@ -13471,7 +12948,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item29
+		class Item26
 		{
 			dataType="Group";
 			side="West";
@@ -13483,7 +12960,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-538.96198,0.0014388561,506.26999};
+						position[]={837.46057,0.0014388561,881.98047};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13494,10 +12971,6 @@ class Mission
 						description="Squad Leader@Voyager 2";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131230;
 					type="B_G_Soldier_SL_F";
@@ -13564,7 +13037,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-540.77301,0.0014388561,506.383};
+						position[]={835.64954,0.0014388561,882.09351};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13576,10 +13049,6 @@ class Mission
 						description="CFR Bravo (Medic)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131231;
 					type="B_G_medic_F";
@@ -13646,7 +13115,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-547.82147,0.0014388561,507.02103};
+						position[]={828.6012,0.0014388561,882.73145};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13657,10 +13126,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131232;
 					type="B_G_engineer_F";
@@ -13727,7 +13192,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-545.9339,0.0014388561,506.72574};
+						position[]={830.48865,0.0014388562,882.43628};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13738,10 +13203,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131233;
 					type="B_G_engineer_F";
@@ -13808,7 +13269,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-544.24402,0.0014388561,506.599};
+						position[]={832.17859,0.0014388561,882.30957};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13819,10 +13280,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131234;
 					type="B_G_engineer_F";
@@ -13889,7 +13346,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-542.5979,0.0014388561,506.60175};
+						position[]={833.82458,0.0014388561,882.31226};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -13900,10 +13357,6 @@ class Mission
 						description="Engineer";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131235;
 					type="B_G_engineer_F";
@@ -13990,7 +13443,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item30
+		class Item27
 		{
 			dataType="Group";
 			side="West";
@@ -14002,7 +13455,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-538.638,0.0014388561,512.776};
+						position[]={837.78455,0.0014388561,888.48633};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14015,10 +13468,6 @@ class Mission
 						description="Field Docter@Banshee";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131237;
 					type="B_G_medic_F";
@@ -14098,7 +13547,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-542.16803,0.0014388561,513.12097};
+						position[]={834.25452,0.0014388561,888.83154};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14110,10 +13559,6 @@ class Mission
 						description="CFR Charlie";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131238;
 					type="B_G_medic_F";
@@ -14193,7 +13638,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-540.27197,0.0014388561,513.08301};
+						position[]={836.15051,0.0014388561,888.79346};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14205,10 +13650,6 @@ class Mission
 						description="CFR Charlie";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131239;
 					type="B_G_medic_F";
@@ -14288,7 +13729,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-547.53003,0.0014388561,513.38501};
+						position[]={828.89246,0.0014388561,889.09546};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14300,10 +13741,6 @@ class Mission
 						description="CFR Bravo";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131240;
 					type="B_G_medic_F";
@@ -14370,7 +13807,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-545.67999,0.0014388561,513.26599};
+						position[]={830.74255,0.0014388561,888.97656};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14382,10 +13819,6 @@ class Mission
 						description="CFR Bravo";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131241;
 					type="B_G_medic_F";
@@ -14452,7 +13885,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-544.03198,0.0014388561,513.229};
+						position[]={832.3905,0.0014388561,888.93945};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14464,10 +13897,6 @@ class Mission
 						description="CFR Bravo";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131242;
 					type="B_G_medic_F";
@@ -14554,7 +13983,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item31
+		class Item28
 		{
 			dataType="Group";
 			side="West";
@@ -14566,7 +13995,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-538.30334,0.0014388561,516.23267};
+						position[]={838.11926,0.0014388561,891.94312};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14577,10 +14006,6 @@ class Mission
 						description="Fire Support Officer@Paladin";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131244;
 					type="B_G_Soldier_SL_F";
@@ -14647,7 +14072,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-540.70038,0.0014388561,516.52765};
+						position[]={835.72229,0.0014388561,892.23804};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14658,10 +14083,6 @@ class Mission
 						description="Artilleryman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131245;
 					type="B_G_engineer_F";
@@ -14728,7 +14149,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-542.64532,0.0014388561,516.61664};
+						position[]={833.77722,0.0014388561,892.32715};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14739,10 +14160,6 @@ class Mission
 						description="Artilleryman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131246;
 					type="B_G_engineer_F";
@@ -14809,7 +14226,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-546.81836,0.0014388561,516.85767};
+						position[]={829.60413,0.0014388561,892.56812};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14820,10 +14237,6 @@ class Mission
 						description="Artilleryman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131247;
 					type="B_G_engineer_F";
@@ -14890,7 +14303,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-544.73499,0.0014388561,516.73346};
+						position[]={831.68762,0.0014388561,892.44385};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -14901,10 +14314,6 @@ class Mission
 						description="Artilleryman";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131248;
 					type="B_G_engineer_F";
@@ -14991,7 +14400,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item32
+		class Item29
 		{
 			dataType="Group";
 			side="West";
@@ -15003,7 +14412,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-555.54797,0.0014388561,534.83197};
+						position[]={820.87463,0.0014388561,910.54248};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15015,10 +14424,6 @@ class Mission
 						description="Team Leader (CFR Charlie)@Fox";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131250;
 					type="B_G_Soldier_TL_F";
@@ -15111,7 +14516,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-556.966,0.0014388561,534.97998};
+						position[]={819.45667,0.0014388561,910.69043};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15122,10 +14527,6 @@ class Mission
 						description="JFO (CFR Bravo)";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131251;
 					type="B_G_Soldier_TL_F";
@@ -15205,7 +14606,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-558.70099,0.0014388561,535.18298};
+						position[]={817.72156,0.0014388561,910.89355};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15214,10 +14615,6 @@ class Mission
 						description="Sniper";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131252;
 					type="B_CTRG_Sharphooter_F";
@@ -15297,7 +14694,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-560.5,0.0014388561,535.37396};
+						position[]={815.92249,0.0014388561,911.08447};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15306,10 +14703,6 @@ class Mission
 						description="Spotter";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131253;
 					type="B_CTRG_Sharphooter_F";
@@ -15389,7 +14782,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.30103,0.0014388561,535.64197};
+						position[]={814.12146,0.0014388561,911.35254};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15400,10 +14793,6 @@ class Mission
 						description="Explosive Specialist";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131254;
 					type="B_CTRG_soldier_engineer_exp_F";
@@ -15503,7 +14892,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item33
+		class Item30
 		{
 			dataType="Group";
 			side="West";
@@ -15515,7 +14904,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.66602,0.0014388561,525.95599};
+						position[]={818.75647,0.0014388561,901.6665};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15526,10 +14915,6 @@ class Mission
 						description="Commander@Sentinel 1";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131256;
 					type="B_G_engineer_F";
@@ -15609,7 +14994,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-559,0.0014388561,526.19904};
+						position[]={817.42249,0.0014388561,901.90942};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15619,10 +15004,6 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131257;
 					type="B_G_engineer_F";
@@ -15702,7 +15083,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-560.48499,0.0014388561,526.41107};
+						position[]={815.93762,0.0014388561,902.12158};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15712,10 +15093,6 @@ class Mission
 						description="Loader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131258;
 					type="B_G_engineer_F";
@@ -15795,7 +15172,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-561.927,0.0014388561,526.58807};
+						position[]={814.49548,0.0014388561,902.29858};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15806,10 +15183,6 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131259;
 					type="B_G_engineer_F";
@@ -15909,7 +15282,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item34
+		class Item31
 		{
 			dataType="Group";
 			side="West";
@@ -15921,7 +15294,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-557.68298,0.0014388561,528.87103};
+						position[]={818.73962,0.0014388561,904.58154};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -15932,10 +15305,6 @@ class Mission
 						description="Commander@Sentinel 2";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131261;
 					type="B_G_engineer_F";
@@ -16015,7 +15384,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-559.1123,0.0014388561,528.98718};
+						position[]={817.31018,0.0014388561,904.69775};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16025,10 +15394,6 @@ class Mission
 						description="Gunner";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131262;
 					type="B_G_engineer_F";
@@ -16108,7 +15473,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-560.59729,0.0014388561,529.19916};
+						position[]={815.82532,0.0014388561,904.90967};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16118,10 +15483,6 @@ class Mission
 						description="Loader";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131263;
 					type="B_G_engineer_F";
@@ -16201,7 +15562,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-562.03931,0.0014388561,529.37616};
+						position[]={814.38318,0.0014388561,905.08667};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16212,10 +15573,6 @@ class Mission
 						description="Driver";
 						isPlayable=1;
 						disableSimulation=1;
-						class Inventory
-						{
-							map="ItemMap";
-						};
 					};
 					id=131264;
 					type="B_G_engineer_F";
@@ -16315,7 +15672,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item35
+		class Item32
 		{
 			dataType="Group";
 			side="West";
@@ -16327,7 +15684,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-573.1593,0.0014388561,533.58752};
+						position[]={803.26331,0.0014388561,909.29785};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16404,7 +15761,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-574.45691,0.0014388561,533.50372};
+						position[]={801.9657,0.0014388561,909.21411};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16500,7 +15857,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item36
+		class Item33
 		{
 			dataType="Group";
 			side="West";
@@ -16512,7 +15869,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-573.18005,0.0014388561,531.20502};
+						position[]={803.24255,0.0014388561,906.91553};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16589,7 +15946,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-574.47766,0.0014388561,531.12115};
+						position[]={801.94495,0.0014388561,906.83154};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16685,7 +16042,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item37
+		class Item34
 		{
 			dataType="Group";
 			side="West";
@@ -16697,7 +16054,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-572.57446,0.0014388561,523.19049};
+						position[]={803.84802,0.0014388561,898.90088};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16774,7 +16131,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-574.06885,0.0014388561,523.35358};
+						position[]={802.35364,0.0014388561,899.06396};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16870,7 +16227,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item38
+		class Item35
 		{
 			dataType="Group";
 			side="West";
@@ -16882,7 +16239,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-573.06482,0.0014388561,528.71344};
+						position[]={803.35779,0.0014388561,904.42383};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -16959,7 +16316,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-574.36243,0.0014388561,528.6297};
+						position[]={802.06018,0.0014388561,904.34009};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -17055,7 +16412,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item39
+		class Item36
 		{
 			dataType="Group";
 			side="West";
@@ -17067,7 +16424,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-572.45935,0.0014388561,520.69891};
+						position[]={803.96326,0.0014388561,896.40942};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -17144,7 +16501,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-573.95361,0.0014388561,520.86206};
+						position[]={802.46887,0.0014388561,896.57251};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -17240,7 +16597,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item40
+		class Item37
 		{
 			dataType="Group";
 			side="West";
@@ -17252,7 +16609,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-572.883,0.0014388561,514.78601};
+						position[]={803.53967,0.0014388561,890.49658};
 						angles[]={0,0.034138639,0};
 					};
 					side="West";
@@ -17348,14 +16705,14 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item41
+		class Item38
 		{
 			dataType="Layer";
 			name="HQs";
 			id=131425;
 			atlOffset=185.97;
 		};
-		class Item42
+		class Item39
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -17365,7 +16722,7 @@ class Mission
 			id=131426;
 			type="LocationFOB_F";
 		};
-		class Item43
+		class Item40
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -17376,7 +16733,7 @@ class Mission
 			id=131427;
 			type="LocationFOB_F";
 		};
-		class Item44
+		class Item41
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -17386,7 +16743,7 @@ class Mission
 			id=131428;
 			type="LocationBase_F";
 		};
-		class Item45
+		class Item42
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -17396,7 +16753,7 @@ class Mission
 			id=131429;
 			type="LocationEvacPoint_F";
 		};
-		class Item46
+		class Item43
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -17406,7 +16763,7 @@ class Mission
 			id=131430;
 			type="LocationFOB_F";
 		};
-		class Item47
+		class Item44
 		{
 			dataType="Logic";
 			class PositionInfo
